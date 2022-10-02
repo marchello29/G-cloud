@@ -1,12 +1,12 @@
 rm -rf ngrok ngrok.zip ng.sh &>/dev/null &
-wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip &>/dev/null &
-unzip ngrok.zip &>/dev/null &
 echo "================================"
 echo "      Disclamer / DANGER!       "
 echo "================================"
 echo "Use fresh token from Ngrok to anticipate the occurrence of errors when starting a new ngrok tunnel"
 echo "Recommended you Reset Authtoken before use this RDP"
 echo "Blur your AUTHTOKEN from anyone if you take this video"
+wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip &>/dev/null &
+unzip ngrok.zip &>/dev/null &
 read -p "Do you understand from this disclamer? [Y/n]: " disclamerngrok
 if [[ $disclamerngrok == "y" || $disclamerngrok == "yes" || $disclamerngrok == "1" ]]
 then
